@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+
+SaSu (Share and Shorten Url) for Android by Bruno Hautzenberger 2011
+
+This file is part of SaSu.
+
+SaSu is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+SaSu is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with SaSu.  If not, see <http://www.gnu.org/licenses/>.
+
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3399FF"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3399FF"
+    >
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_button"
+    android:gravity="center_horizontal"
+    android:layout_margin="5px"
+    >
+
+		<ImageView 
+		android:layout_width="300px" 
+		android:layout_height="300px" 
+		android:id="@+id/ivQr" 
+		android:src="@drawable/icon">
+		</ImageView>
+	
+	</LinearLayout>
+
+	<EditText 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/etUrl"
+	android:padding="5px"
+	android:layout_margin="5px"
+	android:background="@drawable/border_textbox"
+    android:textColor="#000000" >
+	</EditText>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	
+		<Button 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:text="share URL..."
+		android:padding="5px"
+		android:layout_weight="1"
+		android:layout_margin="5px"
+		android:id="@+id/btnShareUrl"
+    	android:background="@drawable/border_button"
+    	android:textColor="#3399FF" >
+		</Button>
+		
+		<Button 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:padding="5px"
+		android:layout_weight="1"
+		android:layout_margin="5px"
+		android:text="share QR..." 
+		android:id="@+id/btnShareQr"
+		android:background="@drawable/border_button"
+    	android:textColor="#3399FF"  >
+		</Button>
+		
+		<Button 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:gravity="fill_horizontal"
+		android:padding="5px"
+		android:layout_weight="1"
+		android:layout_margin="5px"
+		android:text="RESET" 
+		android:id="@+id/btnReset"
+		android:background="@drawable/border_button2"
+    	android:textColor="#FFFFFF"  >
+		</Button>
+	
+	</LinearLayout>
+	
+	<Button 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:padding="5px"
+		android:layout_margin="5px"
+		android:text="shorten Url" 
+		android:id="@+id/btnShorten"
+		android:textStyle="bold"
+		android:background="@drawable/border_button"
+    	android:textColor="#3399FF"  >
+	</Button>
+	
+	<View
+		android:layout_width="fill_parent" 
+		android:layout_height="2px"
+		android:layout_margin="10px"
+		android:background="#a4a4a4" />
+	
+	<TextView
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:padding="5px"
+		android:layout_margin="5px"
+		android:text="SaSu - Share And Shorten URL - a URL Shortener for Android - Using http://goo.gl API to shorten URLs and generate QR Code - by Bruno Hautzenberger - http://the-engine.at" 
+		android:id="@+id/tvPowered"
+		android:textColor="#000000"
+		android:background="@drawable/border_button" />
+
+</LinearLayout>
+
+</LinearLayout>
