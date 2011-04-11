@@ -32,7 +32,7 @@ import android.content.Context;
 
 public class WebService {
 	
-	private static String URL = "https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCb74-cvjKlKPWo_4Azj36Y2tL3gmfEAQ0";
+	private static String URL = "https://www.googleapis.com/urlshortener/v1/url?key=<your-api-key>";
 
 
 	public static ShortUrl shortenUrl(String longUrl) throws IOException, JSONException{
